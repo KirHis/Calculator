@@ -2,7 +2,6 @@ html{
     box-sizing: border-box;
     height: 100%;
 }
-
 *,
 *::before,
 *::after{
@@ -10,7 +9,6 @@ html{
     margin: 0;
     padding: 0;
 }
-
 body{
     align-items: center;
     background: linear-gradient(320deg, #f670cf, #32defd); 
@@ -20,8 +18,7 @@ body{
     height: inherit;
     justify-content: center;
 }
-
-.wrapper {
+.calculator {
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255,255,255, 0.75);
@@ -37,8 +34,7 @@ body{
     height: 540px;
     padding: 20px 35px;
 }
-
-.screen {
+.calculator__screen {
     backdrop-filter: blur (5.5px);
     -webkit-backdrop-filter:blur (5.5px);
     background: rgba(255, 255, 255, 0.75);
@@ -52,14 +48,12 @@ body{
     text-align: right;
     width: 326px;
 }
-
-.calc-button-row{
+.calculator__buttons-row{
     display: flex;
     justify-content: space-between;
     margin: 5% 0;
 }
-
-.calc-button {
+.calculator__buttons-row-button {
     backdrop-filter: blur (5.5px);
     -webkit-backdrop-filter:blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
@@ -72,8 +66,7 @@ body{
     font-size: 24px;
     height: 65px;
 }
-
-.calc-button-tripple{
+.calculator__buttons-row-button._tripple{
     backdrop-filter: blur (5.5px);
     -webkit-backdrop-filter:blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
@@ -86,7 +79,7 @@ body{
     font-size: 24px;
     height: 65px;
 }
-.calc-button:last-child{
+.calculator__buttons-row-button:last-child{
     backdrop-filter: blur (5.5px);
     -webkit-backdrop-filter:blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
@@ -96,34 +89,29 @@ body{
     color:#fff;
     background: #f670cf;
 }
-
-.calc-button:last-child:hover{
+.calculator__buttons-row-button:last-child:hover{
     background-color: inherit;
     color: inherit;
 }
-
-.calc-button:last-child:active{
+.calculator__buttons-row-button:last-child:active{
     background-color:aqua;
 }
-
-.calc-button:hover{
+.calculator__buttons-row-button:hover{
+    
     background-color:inherit;
 }
-
-.calc-button:active{
+.calculator__buttons-row-button:active{
+    
     background-color: #32defd;
 }
-
-.calc-button-tripple:hover{
+.calculator__buttons-row-button._tripple:hover{
     background-color:inherit;
 }
-
-.calc-button-tripple:active{
+.calculator__buttons-row-button._tripple:active{
     background-color: #32defd;
 
 }
-
-.double{
+.calculator__buttons-row-button._double{
     flex-basis: 47%;
 }
 
